@@ -1,7 +1,0 @@
-/workdir/build/CMakeFiles/install/strip.dir
-/workdir/build/CMakeFiles/install/local.dir
-/workdir/build/CMakeFiles/install.dir
-/workdir/build/CMakeFiles/list_install_components.dir
-/workdir/build/CMakeFiles/rebuild_cache.dir
-/workdir/build/CMakeFiles/edit_cache.dir
-/workdir/build/CMakeFiles/hello.dir
