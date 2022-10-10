@@ -9,9 +9,8 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: pwd
-      - run: ls
-      - run: sh /run.sh
+      - run: cmake -DCMAKE_TOOLCHAIN_FILE=/cmake/aarch64-rpi4-linux-gnu.cmake -S . -B ./build
+      - run: cmake --build ./build
   release:
     docker:
       - image: cibuilds/github:0.10
