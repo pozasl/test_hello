@@ -13,6 +13,10 @@ jobs:
       - checkout
       - run: cmake -DCMAKE_TOOLCHAIN_FILE=/cmake/aarch64-rpi4-linux-gnu.cmake -S . -B ./build
       - run: cmake --build ./build
+      - persist_to_workspace:
+          root: .     # relative path to our working directory
+          paths:      # file globs which will be persisted to the workspace
+           - ./build/hello
   release:
     docker:
       - image: cibuilds/github:0.10
