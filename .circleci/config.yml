@@ -23,7 +23,6 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: ls build
       - run:
           name: "Publish Release on GitHub"
           command: |
